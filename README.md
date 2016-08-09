@@ -16,11 +16,13 @@ and run `bundle install`.
 
 ## Usage
 
-1. copy `mongo.coffee`, `mongo.html`, and `mongo.scss` into the `/widgets/mongo` directory of your Dashing app.
+1. copy `mongo.scss` into the `/widgets/mongo` directory of your Dashing app.
 
-2. Copy the `mongo.rb` file into your `/jobs` folder.
+2. copy `mongo_network.coffee`, `mongo_network.html`, `mongo_network.scss` into the `/widgets/mongo_network` directory of your Dashing app.
 
-3. Now copy over the `mongo.yml` into the root directory of your Dashing application. Be sure to replace the following options inside of the config file:
+3. Copy the `mongo.rb` file into your `/jobs` folder.
+
+4. Now copy over the `mongo.yml` into the root directory of your Dashing application. Be sure to replace the following options inside of the config file:
 
 ```
 :mongo_host: 'localhost'
@@ -28,7 +30,7 @@ and run `bundle install`.
 :mongo_password: 'your password'
 ```
 
-4. copy `mongo-background.png` into your `/assets/images/` folder
+5. copy `mongo-background.png` into your `/assets/images/` folder
 
 
 Then include the widget in a dashboard, by adding the following snippet to your dashboard layout file:
@@ -37,6 +39,13 @@ Then include the widget in a dashboard, by adding the following snippet to your 
 ```html
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
         <div data-id="mongo_connected_clients" data-view="Number" data-title="MongoDb clients"></div>
+    </li>
+```
+
+* For the Mongo network info widget:
+```html
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+        <div data-id="mongo_network_info" data-view="MongoNetwork" data-title="MongoDb network"></div>
     </li>
 ```
 

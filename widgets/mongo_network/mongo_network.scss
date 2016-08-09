@@ -3,9 +3,29 @@
 // ----------------------------------------------------------------------------
 $background-color:  #6aaf4e;
 
+$title-color:       rgba(255, 255, 255, 0.7);
+$moreinfo-color:    rgba(255, 255, 255, 0.7);
+$updated-at-color:  rgba(0, 0, 0, 0.3);
+
 // ----------------------------------------------------------------------------
-// mongo_connected_clients styles
+// Widget-mongo-network styles
 // ----------------------------------------------------------------------------
-.mongo_connected_clients {
+.widget-mongo-network {
   background-color: $background-color!important;
+}
+
+.down-val {
+  margin-left: 10px;
+}
+
+.title {
+  color: $title-color;
+}
+
+.updated-at {
+  color: $updated-at-color
+}
+
+.more-info {
+  color: $moreinfo-color;
 }

@@ -1,0 +1,15 @@
+<h1 class="title" data-bind="title"></h1>
+
+<h2 class="network_requests" data-bind="network_requests | shortenedNumber"></h2>
+
+<span class="up-val">
+  <i class="fa fa-arrow-down"></i> <span data-bind="network_in | round | append suffix"></span>
+</span>
+
+<span class="down-val">
+  <i class="fa fa-arrow-up"></i> <span data-bind="network_out | round | append suffix"></span>
+</span>
+
+<p class="more-info" data-bind="moreinfo"></p>
+
+<p class="updated-at" data-bind="updatedAtMessage"></p>
