@@ -18,8 +18,9 @@ SCHEDULER.every('5m', first_in: '1s') {
     info = mongo.command({ serverStatus: 1 }).to_a
 
     send_event('mongo_connected_clients', {
-        current: info[0]['connections']['current'],
-        moreinfo: "Number of connected clients"
+        max: info[0]['connections']['available'].to_i,
+        value: info[0]['connections']['current'].to_i,
+        moreinfo: "Connected clients"
     })
 
     # Convert network in/out in bytes to MB

@@ -16,7 +16,7 @@ and run `bundle install`.
 
 ## Usage
 
-1. copy `mongo.scss` into the `/widgets/mongo` directory of your Dashing app.
+1. copy `mongo_clients.coffee`, `mongo_clients.html`, `mongo_clients.scss` into the `/widgets/mongo_clients` directory of your Dashing app.
 
 2. copy `mongo_network.coffee`, `mongo_network.html`, `mongo_network.scss` into the `/widgets/mongo_network` directory of your Dashing app.
 
@@ -38,7 +38,7 @@ Then include the widget in a dashboard, by adding the following snippet to your 
 * For the Mongo clients widget:
 ```html
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-        <div data-id="mongo_connected_clients" data-view="Number" data-title="MongoDb clients"></div>
+        <div data-id="mongo_connected_clients" data-view="MongoClients" data-title="MongoDb clients"></div>
     </li>
 ```
 

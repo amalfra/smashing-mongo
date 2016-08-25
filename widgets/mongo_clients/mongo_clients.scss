@@ -1,0 +1,61 @@
+// ----------------------------------------------------------------------------
+// Sass declarations
+// ----------------------------------------------------------------------------
+$background-color:  #6aaf4e;
+
+$title-color:       rgba(255, 255, 255, 0.7);
+$updated-at-color:  rgba(0, 0, 0, 0.3);
+
+$meter-background:  darken($background-color, 15%);
+
+// ----------------------------------------------------------------------------
+// Widget-meter styles
+// ----------------------------------------------------------------------------
+.widget-mongo-clients {
+
+  background-color: $background-color;
+
+    .title {
+        color: $title-color;
+    }
+
+    .value {
+        font-weight: 600;
+        font-size: 30px
+    }
+
+    .gauge {
+        width: 100px;
+        height: 180px;
+        display: block;
+        margin: 0 auto 10px;
+        position: relative;
+    }
+
+    .gauge-meter, .gauge::after {
+        display: block;
+        background: url("/assets/mongo-background.png") repeat-y center bottom;
+    }
+
+    .gauge::after {
+        content: "";
+        height: 100%;
+        opacity: 0.15;
+    }
+
+    .gauge-meter {
+        width: 100px;
+        position: absolute;
+        bottom: 0;
+        opacity: 0.6;
+    }
+
+    .updated-at {
+        color: $updated-at-color
+    }
+
+    .connections {
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+}
