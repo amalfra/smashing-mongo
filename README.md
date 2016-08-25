@@ -22,16 +22,16 @@ and run `bundle install`.
 
 3. Copy the `mongo.rb` file into your `/jobs` folder.
 
-4. Now copy over the `mongo.yml` into the root directory of your Dashing application. Be sure to replace the following options inside of the config file:
+4. copy `mongo-background.png` into your `/assets/images/` folder
+
+5. Now copy over the `mongo.yml` into the root directory of your Dashing application. Be sure to replace the following options inside of the config file:
 
 ```
 :mongo_host: 'localhost'
 :mongo_username: 'your username'
 :mongo_password: 'your password'
 ```
-
-5. copy `mongo-background.png` into your `/assets/images/` folder
-
+*Remove ```mongo_username``` and ```mongo_password``` if you don't have authentication.*
 
 Then include the widget in a dashboard, by adding the following snippet to your dashboard layout file:
 
@@ -51,7 +51,7 @@ Then include the widget in a dashboard, by adding the following snippet to your 
 
 ## Development
 
-Questions, problems or suggestions? Please post them on the [issue tracker](https://github.com/amalfra/dashing-mongo/issues). 
+Questions, problems or suggestions? Please post them on the [issue tracker](https://github.com/amalfra/dashing-mongo/issues).
 
 You can contribute changes by forking the project and submitting a pull request. Feel free to contribute :heart_eyes:
 
