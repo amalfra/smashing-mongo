@@ -22,12 +22,11 @@ and run `bundle install`.
 
 3. copy `mongo-background.png` into your `/assets/images` folder
 
-4. Now copy over the `mongo.yml` into the root directory of your Smashing application. Be sure to replace the following options inside of the config file:
+4. Now copy over the `mongo.yml` into the root directory of your Smashing application. Be sure to replace the following options inside of the config file accordingly:
 
-```
-:mongo_host: 'localhost'
-:mongo_username: 'your username'
-:mongo_password: 'your password'
+* mongo_host
+* mongo_username
+* mongo_password
 ```
 *Remove ```mongo_username``` and ```mongo_password``` if you don't have authentication.*
 
