@@ -27,7 +27,7 @@ and run `bundle install`.
 * mongo_host
 * mongo_username
 * mongo_password
-```
+
 *Remove ```mongo_username``` and ```mongo_password``` if you don't have authentication.*
 
 5. Then include the widget in a dashboard, by adding the following snippet to your dashboard layout file:
