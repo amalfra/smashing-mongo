@@ -36,14 +36,14 @@ and run `bundle install`.
 * For the Mongo clients widget:
 ```html
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-        <div data-id="mongo_connected_clients" data-view="MongoClients" data-title="MongoDb clients"></div>
+        <div data-id="mongo_connected_clients" data-view="MongoClients" data-title="MongoDB clients"></div>
     </li>
 ```
 
 * For the Mongo network info widget:
 ```html
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-        <div data-id="mongo_network_info" data-view="MongoNetwork" data-title="MongoDb network"></div>
+        <div data-id="mongo_network_info" data-view="MongoNetwork" data-title="MongoDB network"></div>
     </li>
 ```
 

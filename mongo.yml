@@ -1,3 +1,3 @@
-:mongo_host: 'localhost'
-:mongo_username: 'your username'
-:mongo_password: 'your password'
+:mongo_host: localhost
+:mongo_username: your username
+:mongo_password: your password
