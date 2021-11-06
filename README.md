@@ -1,4 +1,4 @@
-## MongoDb widget for Smashing
+## MongoDB widget for Smashing
 
 [Smashing](https://smashing.github.io) widget to display [mongodb](http://www.mongodb.com) server status.
 
