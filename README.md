@@ -1,14 +1,14 @@
-## MongoDb widget for Dashing
+## MongoDb widget for Smashing
 
-[Dashing](http://shopify.github.com/dashing) widget to display [mongodb](http://www.mongodb.com/) server status.
+[Smashing](https://smashing.github.io) widget to display [mongodb](http://www.mongodb.com) server status.
 
-![](https://raw.githubusercontent.com/amalfra/dashing-mongo/master/screenshot.png)
+![](https://raw.githubusercontent.com/amalfra/smashing-mongo/master/screenshot.png)
 
 ## Dependencies
 
 [mongodb ruby driver](https://github.com/mongodb/mongo-ruby-driver)
 
-Add it to dashing's gemfile:
+Add it to smashing's gemfile:
 
     gem 'mongo'
 
@@ -16,15 +16,13 @@ and run `bundle install`.
 
 ## Usage
 
-1. copy `mongo_clients.coffee`, `mongo_clients.html`, `mongo_clients.scss` into the `/widgets/mongo_clients` directory of your Dashing app.
+1. copy `/widgets` directory into `/widgets` directory of your Smashing app.
 
-2. copy `mongo_network.coffee`, `mongo_network.html`, `mongo_network.scss` into the `/widgets/mongo_network` directory of your Dashing app.
+2. Copy the `mongo.rb` file into your `/jobs` folder.
 
-3. Copy the `mongo.rb` file into your `/jobs` folder.
+3. copy `mongo-background.png` into your `/assets/images` folder
 
-4. copy `mongo-background.png` into your `/assets/images/` folder
-
-5. Now copy over the `mongo.yml` into the root directory of your Dashing application. Be sure to replace the following options inside of the config file:
+4. Now copy over the `mongo.yml` into the root directory of your Smashing application. Be sure to replace the following options inside of the config file:
 
 ```
 :mongo_host: 'localhost'
@@ -33,7 +31,7 @@ and run `bundle install`.
 ```
 *Remove ```mongo_username``` and ```mongo_password``` if you don't have authentication.*
 
-Then include the widget in a dashboard, by adding the following snippet to your dashboard layout file:
+5. Then include the widget in a dashboard, by adding the following snippet to your dashboard layout file:
 
 * For the Mongo clients widget:
 ```html
@@ -51,7 +49,7 @@ Then include the widget in a dashboard, by adding the following snippet to your 
 
 ## Development
 
-Questions, problems or suggestions? Please post them on the [issue tracker](https://github.com/amalfra/dashing-mongo/issues).
+Questions, problems or suggestions? Please post them on the [issue tracker](https://github.com/amalfra/smashing-mongo/issues).
 
 You can contribute changes by forking the project and submitting a pull request. Feel free to contribute :heart_eyes:
 
